@@ -6,8 +6,10 @@ import { InfoPaginaService } from '../../services/info-pagina.service';
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css']
 })
+
 export class FooterComponent implements OnInit {
    anio: number = new Date().getFullYear();
+
   constructor(public _servicio: InfoPaginaService) { }
 
   ngOnInit() {
